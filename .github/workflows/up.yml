@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
     inputs:
       stage:
-        description: 'Custom stage'
-        default: 'staging'
+        description: Custom stage
+        default: staging
 
 jobs:
   build:
