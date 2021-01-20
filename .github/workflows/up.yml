@@ -30,5 +30,4 @@ jobs:
       - name: Deploy
         uses: apex/actions/up@v0.5.1
         with: 
-          stage: ${{github.event.inputs.stage}}
-#
+          stage: staging
