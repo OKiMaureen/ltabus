@@ -28,5 +28,7 @@ jobs:
       - name: Add font
         run: git clone --depth 1 https://go.googlesource.com/image
       - name: Deploy
-        run: echo "stage:${{github.event.inputs.stage}}"
+        uses: apex/actions/up@v0.5.1
+        with: 
+          stage: ${{github.event.inputs.stage}}
 #
