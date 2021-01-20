@@ -28,10 +28,5 @@ jobs:
       - name: Add font
         run: git clone --depth 1 https://go.googlesource.com/image
       - name: Deploy
-        uses: apex/actions/up@v0.5.1
-#         env:
-#           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-#           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-#           UP_CONFIG: ${{ secrets.UP_CONFIG }}
-        with:
-          stage: ${{ github.event.inputs.stage }}
+        run: echo "stage:${{github.event.inputs.stage}}"
+#
